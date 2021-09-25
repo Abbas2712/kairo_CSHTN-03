@@ -71,24 +71,38 @@ class _NavBarState extends State<NavBar> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         //WebIcon
-        Container(
-          padding: EdgeInsets.only(left: 100.0, right: 5.0),
+        InkWell(
+          onTap: () {
+            Navigator.pushNamed(context, "/");
+          },
+          splashColor: Colors.transparent,
+          hoverColor: Colors.transparent,
+          focusColor: Colors.transparent,
+          highlightColor: Colors.transparent,
           child: Container(
-            child: Image.asset("kairo_Meds.png",
-            height: 100,
-            width: 100,
+            padding: EdgeInsets.only(left: 100.0, right: 5.0),
+            child: Container(
+              child: Image.asset(
+                "kairo_Meds.png",
+                height: 100,
+                width: 100,
+              ),
             ),
           ),
         ),
         // Menu Items
         Row(
           children: [
+            
             //Home
             InkWell(
+              splashColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              highlightColor: Colors.transparent,
               onTap: () {
                 Navigator.pushNamed(context, "/");
               },
-              mouseCursor: MouseCursor.uncontrolled,
               child: Container(
                 alignment: Alignment.center,
                 padding: EdgeInsets.only(left: 25.0, right: 25.0),
@@ -99,12 +113,16 @@ class _NavBarState extends State<NavBar> {
                 ),
               ),
             ),
+
             //Store
             InkWell(
+              splashColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              highlightColor: Colors.transparent,
               onTap: () {
                 // Navigator.pushNamed(context, "/store");
               },
-              mouseCursor: MouseCursor.uncontrolled,
               child: Container(
                 alignment: Alignment.center,
                 padding: EdgeInsets.only(left: 25.0, right: 25.0),
@@ -115,34 +133,42 @@ class _NavBarState extends State<NavBar> {
                 ),
               ),
             ),
-            //About_Us
+
+            //Contact_Us
             InkWell(
-              onTap: () {
-                Navigator.pushNamed(context, "/about_us");
-              },
-              mouseCursor: MouseCursor.uncontrolled,
-              child: Container(
-                alignment: Alignment.center,
-                padding: EdgeInsets.only(left: 25.0, right: 25.0),
-                height: 80.0,
-                child: Text(
-                  "About Us",
-                  style: TextStyle(fontSize: 15),
-                ),
-              ),
-            ),
-            //COntact_Us
-            InkWell(
+              splashColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              highlightColor: Colors.transparent,
               onTap: () {
                 Navigator.pushNamed(context, "/contact_us");
               },
-              mouseCursor: MouseCursor.uncontrolled,
               child: Container(
                 alignment: Alignment.center,
                 padding: EdgeInsets.only(left: 25.0, right: 25.0),
                 height: 80.0,
                 child: Text(
                   "Contact Us",
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
+            ),
+
+            //About_Us
+            InkWell(
+              splashColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              onTap: () {
+                Navigator.pushNamed(context, "/about_us");
+              },
+              child: Container(
+                alignment: Alignment.center,
+                padding: EdgeInsets.only(left: 25.0, right: 25.0),
+                height: 80.0,
+                child: Text(
+                  "About Us",
                   style: TextStyle(fontSize: 15),
                 ),
               ),
@@ -186,17 +212,25 @@ class _NavBarState extends State<NavBar> {
         // :
         Row(
           children: [
-            Image.asset("Icon-awesome-user.png",height: 20.0, width: 20.0),
-            SizedBox(width: 12.0,),
-            Text("Hello Alex",style: TextStyle(fontSize: 15.0,fontWeight: FontWeight.w600),),
-            SizedBox(width: 12.0,),
-            Image.asset("Icon-material-arrow_drop_down_circle.png",height: 20.0, width: 20.0),
-            SizedBox(width: 50.0,)
+            Image.asset("Icon-awesome-user.png", height: 20.0, width: 20.0),
+            SizedBox(
+              width: 12.0,
+            ),
+            Text(
+              "Hello Alex",
+              style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w600),
+            ),
+            SizedBox(
+              width: 12.0,
+            ),
+            Image.asset("Icon-material-arrow_drop_down_circle.png",
+                height: 20.0, width: 20.0),
+            SizedBox(
+              width: 50.0,
+            )
           ],
         ),
       ],
     );
   }
 }
-
-

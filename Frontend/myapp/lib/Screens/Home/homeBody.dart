@@ -5,12 +5,11 @@ import 'package:myapp/Components/NavBar.dart';
 import 'package:myapp/Screens/Store/store.dart';
 
 class HomeBody extends StatefulWidget {
-  const HomeBody({ Key? key }) : super(key: key);
+  const HomeBody({Key? key}) : super(key: key);
 
   @override
   _HomeBodyState createState() => _HomeBodyState();
 }
-
 
 class _HomeBodyState extends State<HomeBody> {
   @override
@@ -45,7 +44,7 @@ class _HomeBodyState extends State<HomeBody> {
                     SizedBox(height: 17),
                     Text(
                         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, \nsed diam nonumy eirmod tempor invidunt ut labore et \ndolore magna",
-                        style: TextStyle(fontSize: 20.0,height: 01.50)),
+                        style: TextStyle(fontSize: 20.0, height: 01.50)),
                     SizedBox(
                       height: 50,
                     ),
@@ -62,7 +61,9 @@ class _HomeBodyState extends State<HomeBody> {
                     ),
                   ],
                 ),
-                SizedBox(width: 70.0,),
+                SizedBox(
+                  width: 70.0,
+                ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,

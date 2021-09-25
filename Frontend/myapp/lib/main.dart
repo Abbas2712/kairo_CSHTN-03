@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:myapp/Screens/About/About_Us.dart';
+import 'package:myapp/Screens/Cart/Cart.dart';
 import 'package:myapp/Screens/Contact/contact_Us.dart';
 import 'package:myapp/Screens/Home/home.dart';
 import 'package:myapp/Screens/Store/store.dart';
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
         "/": (context) => Home(),
         "/about_us": (context) => About_Us(),
         "/contact_us": (context) => ContactUs(),
-        "/store": (context) => Store_Page()
+        "/store": (context) => Store_Page(),
+        "/cart": (context) => Cart(),
       },
     );
   }
